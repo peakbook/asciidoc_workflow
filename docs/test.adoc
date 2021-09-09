@@ -16,6 +16,7 @@ https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
 [plantuml, format="svg"]
 ....
 @startuml
+skinparam monochrome true
 Alice -> Bob: Authentication Request
 Bob --> Alice: Authentication Response
 
