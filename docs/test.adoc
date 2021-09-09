@@ -1,0 +1,26 @@
+== Sample
+
+* Asciidoctor quick reference
+https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+* <<myeq, Sample Equation>>
+[stem, id="myeq"]
+\begin{cases}
+\nabla\cdot\boldsymbol{B}(t,\boldsymbol{x})&=0\\
+\nabla\times\boldsymbol{E}(t,\boldsymbol{x})+\dfrac{\partial\boldsymbol{B}(t,\boldsymbol{x})}{\partial t}&=0\\
+\nabla\cdot\boldsymbol{D}(t,\boldsymbol{x})&=\rho(t,\boldsymbol{x})\\
+\nabla\times\boldsymbol{H}(t,\boldsymbol{x})-\dfrac{\partial\boldsymbol{D}(t,\boldsymbol{x})}{\partial t}&=\boldsymbol{j}(t,\boldsymbol{x})
+\end{cases}
+
+.Sample Figure
+[plantuml, format="svg"]
+....
+@startuml
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+@enduml
+....
+
