@@ -1,0 +1,20 @@
+name: asciidoctor_build
+on:
+  push:
+    tags:
+      - v*
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: asciidoctor/docker-asciidoctor:1.11.0
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run make
+        run: make
+      - name: Archive generated documents
+        uses: actions/upload-artifact@v2
+        with:
+          name: html
+          path: main.html
